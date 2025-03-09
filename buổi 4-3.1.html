@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3 - CSS Box Model</title>
+    <link rel="stylesheet" href="styles.css3.1.css">
+</head>
+<body>
+
+    <div class="box small">
+        This is a basic HTML page.
+    </div>
+
+    <div class="box large">
+        This is a basic HTML page.
+    </div>
+</body>
+</html>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.box {
+    background-color: #d3d3d3;
+    border: 2px solid black;
+    text-align: left;
+    margin: 20px;
+}
+
+.small {
+    width: 50%;
+    max-width: 400px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.large {
+    width: 60%;
+    max-width: 500px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+</style>
